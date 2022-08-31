@@ -1,0 +1,31 @@
+package com.info;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Test {
+public static void main(String[] args) {
+	List<Server> list=new ArrayList();
+	
+    Server one=new Server();
+    one.setName("d1");
+    one.setIp("192.1.1.2");
+    one.setManufacture("HP");
+    one.setRam(16);
+    one.setNumProcessor(24);
+    one.setPurchaseDate(LocalDate.parse("2022-1-1", DateTimeFormatter.ISO_DATE));
+    list.add(one);
+    
+    Server two=new Server();
+    two.setName("d2");
+    two.setIp("192.2.2.3");
+    two.setManufacture("Dell");
+    two.setRam(16);
+    two.setNumProcessor(20);
+    two.setPurchaseDate(LocalDate.parse("2022-2-2", DateTimeFormatter.ISO_DATE));
+    
+
+}
+}
